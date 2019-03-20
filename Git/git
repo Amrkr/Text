@@ -1,0 +1,121 @@
+Command Line;
+---------------------------------------------------------------------------------------------------
+
+cd FolderName	:	navigate to folderName
+cd..	:	navigate to one folder back
+dir	:	list all files/folder from the current directory
+mkdir ABC	:	make new folder named ABC
+echo.> fileName.java	:	make new file named file of type JAVA
+echo.> file.txt	:	create text file named file
+del myMusic.java	:	delete myMusic.java file
+rmdir Songs	:	delete "Songs" folder if it's empty
+mkdir Songs\Mucic\Games	:	create multiple folders in hirarchy
+cls		:	clear the cmd
+echo.> Songs\Music\Games\myGame.js		:	create myGame.js file
+
+
+git command line (Unix Command)
+=====================================================================================================
+
+cd ..	:	Navigate to previous folder	
+ls / dir	:	list of files/folder	
+
+git clone  git clone https://github.com/Amrkr/Android.git	:	Clone from Github Folder (github repository/folder clone/download link)
+
+touch fileName.extension fileName2.ext	:	Create new files
+rm fileName.extension	:	Remove a file
+
+git status	:	See the STATUS
+
+Push from local Git repository to github repository:
+----------------------------------------------------
+
+git config --global user.email amrkrcse@gmail.com
+git config --global user.name Amrkr
+
+git add filename.extension
+git commit -m "This is my first commit" muMusic.java
+git push -u origin master
+
+Initialize Git from a folder and pull:
+-----------------------------------------------------
+git init
+git remote add origin "https://github.com/Amrkr/Android.git"
+git pull origin master
+
+Push all changes (multiple files)
+------------------------------------------------------
+git add -A		: indexing multiple files
+git commit -a -m "Commiting multiple files"		: commit multiple files
+git push -u origin master		:	push the changes
+
+
+Branching in Github projects & Merging
+------------------------------------------------------
+git branch FB	:	create new branch (FB)
+git checkout FB		:	switch to FB branch
+touch Mobile.java	: create a Mobile.java file in FB branch
+git commit -m "Java Mobile"		: commit file in that branch
+ls		:		list file/folder inside FB branch including MASTER BRANCH
+git checkout master 	:	 switch to master branch
+ls		:	list all files/folder availabe in master branch  (here Mobile.java will not show, b'coz that is availabe in branch FB)
+
+After switching to master;
+git merge FB	:	merge the branch FB with master
+ls
+
+Now Mobile.java will be availabe in master
+
+Note: After merging FB to master, FB branch will exist. New changes be added in FB branch further and then can be merged with master again 
+with the new features.
+
+display the content of the file:
+-------------------------------------------
+cat Mobile.java
+
+
+Rebase
+-----------------------------------------------------
+
+
+
+SSH Authentication
+-----------------------------------------------------
+ssh-keygen
+
+Copy ssh PUBLIC key to Github
+
+Connect using SSH Key (Always Secure)
+-----------------------------------------------------
+ssh -T git@github.com
+
+
+Push branch onto Github
+-----------------------------------------------------
+ git checkout fb		: switch to branch fb
+ git push origin fb		:	push branch to Github	// if getting fatal error, try naming branch name to upper/lowercase
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
